@@ -61,6 +61,21 @@ $result = $statement->fetch(PDO::FETCH_OBJ);
         <label for="phone">Telefoonnummer:</label><br> 
         <input type="tel" name="phone" id="phone" value="<?php echo $result->Telefoonnummer; ?>"><br>
 
+        <label for="street">Straatnaam:</label><br>
+        <input type="text" name="street" id="street" value="<?php echo $result->Straatnaam; ?>"><br>
+
+        <label for="number">Huisnummer:</label><br>
+        <input type="text" name="number" id="number" value="<?php echo $result->Huisnummer; ?>"><br>
+
+        <label for="house">Woonplaats:</label><br>
+        <input type="text" name="house" id="house"value="<?php echo $result->Woonplaats; ?>"><br>
+
+        <label for="postcode">Postcode:</label><br>
+        <input type="text" name="postcode" id="postcode"value="<?php echo $result->Postcode; ?>"><br>
+
+        <label for="land">Landnaam:</label><br>
+        <input type="text" name="land" id="land"value="<?php echo $result->Landnaam; ?>"><br>
+
         <input type="submit" value="Verstuur">
     </form>
 </body>
