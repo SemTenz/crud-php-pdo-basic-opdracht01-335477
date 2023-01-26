@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 24 jan 2023 om 11:12
+-- Gegenereerd op: 26 jan 2023 om 11:05
 -- Serverversie: 5.7.36
 -- PHP-versie: 7.4.26
 
@@ -34,15 +34,22 @@ CREATE TABLE IF NOT EXISTS `persoon` (
   `Tussenvoegsel` varchar(10) NOT NULL,
   `Achternaam` varchar(60) NOT NULL,
   `Telefoonnummer` varchar(20) NOT NULL,
+  `Straatnaam` varchar(40) NOT NULL,
+  `Huisnummer` varchar(40) NOT NULL,
+  `Woonplaats` varchar(40) NOT NULL,
+  `Postcode` varchar(40) NOT NULL,
+  `Landnaam` varchar(40) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `persoon`
 --
 
-INSERT INTO `persoon` (`Id`, `Voornaam`, `Tussenvoegsel`, `Achternaam`, `Telefoonnummer`) VALUES
-(11, 'Sem', 'de', 'Jaeger', '0612869987');
+INSERT INTO `persoon` (`Id`, `Voornaam`, `Tussenvoegsel`, `Achternaam`, `Telefoonnummer`, `Straatnaam`, `Huisnummer`, `Woonplaats`, `Postcode`, `Landnaam`) VALUES
+(15, 'Sem', '', 'Jaeger', '06123456', '', '', '', '', ''),
+(16, 'Sem', '', 'Jaeger', '06123455', '', '', '', '', ''),
+(17, 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
