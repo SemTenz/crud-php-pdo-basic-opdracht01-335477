@@ -40,11 +40,11 @@ $statement->bindValue(':firstname', $_POST['firstname'], PDO::PARAM_STR);
 $statement->bindValue(':infix', $_POST['infix'], PDO::PARAM_STR);
 $statement->bindValue(':lastname', $_POST['lastname'], PDO::PARAM_STR);
 $statement->bindValue(':phone', $_POST['phone'], PDO::PARAM_STR);
-$statement->bindValue(':street', $_POST['phone'], PDO::PARAM_STR);
-$statement->bindValue(':number', $_POST['phone'], PDO::PARAM_STR);
-$statement->bindValue(':house', $_POST['phone'], PDO::PARAM_STR);
-$statement->bindValue(':postcode', $_POST['phone'], PDO::PARAM_STR);
-$statement->bindValue(':land', $_POST['phone'], PDO::PARAM_STR);
+$statement->bindValue(':street', $_POST['street'], PDO::PARAM_STR);
+$statement->bindValue(':number', $_POST['number'], PDO::PARAM_STR);
+$statement->bindValue(':house', $_POST['house'], PDO::PARAM_STR);
+$statement->bindValue(':postcode', $_POST['postcode'], PDO::PARAM_STR);
+$statement->bindValue(':land', $_POST['land'], PDO::PARAM_STR);
 // Vuur de query af op de database...
 $statement->execute();
 
